@@ -1,0 +1,22 @@
+# Environment / secrets — should NEVER be committed
+.env
+*.env
+secrets.json
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local previews
+preview_*.png
+*.tmp
