@@ -349,4 +349,4 @@ def run_refresh(station_id: str) -> None:
     export["current"]   = current
     export["live"]      = True
     export["station"]   = export.get("station", {"name": "Foxen Canyon"})
-    if current_ts:
+    export["lastFetch"] = datetime.fromtimestamp(current_ts, TZ).isoformat() if current_ts else now.isoformat()
